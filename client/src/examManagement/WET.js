@@ -33,7 +33,7 @@ const WET = ({ wordObj }) => {
     const [rank, setRank] = useState(0)
 
     /* 
-    Is the function in charge of specify the answer by taking a parameter.
+    The function is in charge of specify the answer by taking a parameter.
     Then applies this param to the wordRef.
     And then set the isAnswered state to true so that the feedback page will be displayed
     And after all that it'll implement the `correctAnswer` function
