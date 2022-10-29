@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  overflow: hidden;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(/public/Quiz3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header{
+  display: flex;
+  top: 0px;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+  margin: 0px 50px;
+  padding: 20px;
+  justify-content: center;
+}
+.pos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pos p{
+  font-size: 50px;
+  font-weight: bolder;
+}
+.options{
+  display: grid;
+  column-gap: 10px;
+  row-gap: 50px;
+  grid-template-columns: auto auto;
+  margin: 0px 50px;
+}
+.options button{
+  font-size: 20px;
+  height: 60px;
+  background-color: burlywood;
+  border: none;
+  border-radius: 50px 20px;
+  cursor: pointer;
+}
+.submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.submit button{
+  font-size: 20px;
+  height: 60px;
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  float: right;
+  margin-left: auto;
+  width: 120px;
+  cursor: pointer;
+}
+
+.progress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-left: auto;
+}
+.answerFeedback{
+  display: flex;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  right: 600px;
+  z-index: 100;
+  background: none;
+  padding: 0px;
+  margin: 0px;
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  margin: 200px;
+  box-shadow: 3px 3px red, -1em 0 .4em wheat;
+}
+
+progress {
+  border: none;
+  width: 400px;
+  height: 30px;
+  margin: 15px;
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: grey;
+  border-radius: 20px 50px;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 20px 50px;
+  background: white;
+}
